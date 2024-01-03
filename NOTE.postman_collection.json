@@ -1,0 +1,322 @@
+{
+	"info": {
+		"_postman_id": "cb12d904-d3fc-457f-8c2a-a807fcd82e63",
+		"name": "NOTE",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "28852537"
+	},
+	"item": [
+		{
+			"name": "LoginUser",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"username\":\"lazy\",\n    \"password\":\"lazy\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/auth/login/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"auth",
+						"login",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "SignUp",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"username\" : \"lazy2\",\n    \"password\" :\"lazy2\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/auth/signup/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"auth",
+						"signup",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "NotesAll",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiMTFhMTY1NDgtOWRjMy00OTQzLWIwOWQtZjQzZmRkNzk0MjE3IiwiaWF0IjoxNzA0Mjk4Mjk1fQ._UlgTtAoJyibsgIaayyU2IwxYbF3q34wUwLGLcUTb10",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8000/api/notes/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"notes",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "NotesById",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiMTFhMTY1NDgtOWRjMy00OTQzLWIwOWQtZjQzZmRkNzk0MjE3IiwiaWF0IjoxNzA0Mjk4Mjk1fQ._UlgTtAoJyibsgIaayyU2IwxYbF3q34wUwLGLcUTb10",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8000/api/notes/9c7350b0-0dd6-47d3-8b84-38e3fe2cdb03",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"notes",
+						"9c7350b0-0dd6-47d3-8b84-38e3fe2cdb03"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CreateNewNote",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiMTFhMTY1NDgtOWRjMy00OTQzLWIwOWQtZjQzZmRkNzk0MjE3IiwiaWF0IjoxNzA0Mjk4Mjk1fQ._UlgTtAoJyibsgIaayyU2IwxYbF3q34wUwLGLcUTb10",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"title\" : \"new title\",\n    \"content\" : \"new content\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/notes/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"notes",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UpdateNote",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiMTFhMTY1NDgtOWRjMy00OTQzLWIwOWQtZjQzZmRkNzk0MjE3IiwiaWF0IjoxNzA0Mjk4Mjk1fQ._UlgTtAoJyibsgIaayyU2IwxYbF3q34wUwLGLcUTb10",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"title\" : \"note new title\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/notes/222471a4-013e-449b-acd0-999bea0b1517",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"notes",
+						"222471a4-013e-449b-acd0-999bea0b1517"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DeleteNote",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiMTFhMTY1NDgtOWRjMy00OTQzLWIwOWQtZjQzZmRkNzk0MjE3IiwiaWF0IjoxNzA0Mjk4Mjk1fQ._UlgTtAoJyibsgIaayyU2IwxYbF3q34wUwLGLcUTb10",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8000/api/notes/222471a4-013e-449b-acd0-999bea0b1517",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"notes",
+						"222471a4-013e-449b-acd0-999bea0b1517"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Seach For Note",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiMTFhMTY1NDgtOWRjMy00OTQzLWIwOWQtZjQzZmRkNzk0MjE3IiwiaWF0IjoxNzA0Mjk4Mjk1fQ._UlgTtAoJyibsgIaayyU2IwxYbF3q34wUwLGLcUTb10",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8000/api/search?q=title",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"search"
+					],
+					"query": [
+						{
+							"key": "q",
+							"value": "title"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Share Note",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiMTFhMTY1NDgtOWRjMy00OTQzLWIwOWQtZjQzZmRkNzk0MjE3IiwiaWF0IjoxNzA0Mjk4Mjk1fQ._UlgTtAoJyibsgIaayyU2IwxYbF3q34wUwLGLcUTb10",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"username\" : \"lazy2\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/notes/073acc1d-6cfa-4529-be29-62e8b1b64e19/share",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"notes",
+						"073acc1d-6cfa-4529-be29-62e8b1b64e19",
+						"share"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
