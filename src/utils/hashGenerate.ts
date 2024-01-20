@@ -1,7 +1,7 @@
 
 // Third-party imports
 import crypto from 'crypto';
-import logger from './Logging';
+import logger from '../Logger/Logging';
 
 type HashGenerateType = (text: string) => { salt: string, hash: string };
 

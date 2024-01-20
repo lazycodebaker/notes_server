@@ -4,7 +4,7 @@ import { MikroORM, SqliteDriver } from '@mikro-orm/sqlite'
 
 // Custom imports 
 import microConfig from '../config/mikro-orm.config'
-import logger from '../utils/Logging'
+import logger from '../Logger/Logging'
 
 type MicroOrmDatabase = () => Promise<{
       orm: MikroORM,

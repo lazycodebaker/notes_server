@@ -6,7 +6,7 @@ import { tokenVerify } from '../utils/tokenVerify';
 import { User } from '../models/User';
 import { v4 } from 'uuid';
 import { Collection } from '@mikro-orm/core';
-import logger from '../utils/Logging';
+import logger from '../Logger/Logging';
 // import { Note } from '../models/Note';
 
 const noteRouter = Router();

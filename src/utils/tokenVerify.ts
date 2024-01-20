@@ -4,7 +4,7 @@ import jwt from 'jsonwebtoken';
 
 // Custom imports
 import { Settings } from '../config/settings';
-import logger from './Logging';
+import logger from '../Logger/Logging';
 
 export const tokenVerify = (token: string): string => {
       if (token.length < 1) return ''

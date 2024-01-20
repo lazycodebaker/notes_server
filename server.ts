@@ -6,7 +6,7 @@
 import app from './app'
 import { Settings } from './src/config/settings'
 import createMicroOrmDatabase from './src/database/connector'
-import logger from './src/utils/Logging'
+import logger from './src/Logger/Logging'
 
 const startServer = async (): Promise<void> => {
       try {
@@ -29,7 +29,6 @@ const startServer = async (): Promise<void> => {
 
             })
             logger.info('🚀 Database ready')
-
       }
       catch (error) {
             console.error('Error starting the server:', error)

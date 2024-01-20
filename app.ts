@@ -5,8 +5,9 @@
 import express, { Express, Request, Response } from 'express'
 import cookieParser from 'cookie-parser'
 import cors from 'cors'
+
 // Custom imports
-import logger from './src/utils/Logging'
+import logger from './src/Logger/Logging'
 import { Settings } from './src/config/settings'
 import setupRoutes from './src/routes'
 

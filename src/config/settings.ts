@@ -27,8 +27,8 @@ export const Settings: TSettings = {
         JWT_SECRET_KEY: process.env.JWT_SECRET || 'your-secret-key',
     },
     logs: {
-        file: process.env.LOG_FILE || path.join(__dirname, '../logs/combined.log'),
-        errorFile: process.env.LOG_ERROR_FILE || path.join(__dirname, '../logs/error.log'),
-        exceptionFile: process.env.LOG_EXCEPTION_FILE || path.join(__dirname, '../logs/exceptions.log'),
+        file: process.env.LOG_FILE || path.join(__dirname, '../../Logger/logs/combined.log'),
+        errorFile: process.env.LOG_ERROR_FILE || path.join(__dirname, '../../Logger/logs/error.log'),
+        exceptionFile: process.env.LOG_EXCEPTION_FILE || path.join(__dirname, '../../Logger/logs/exceptions.log'),
     },
 };

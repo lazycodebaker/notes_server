@@ -9,7 +9,7 @@ import { tokenVerify } from '../utils/tokenVerify';
 import { verifyPassword } from '../utils/verifyPassword';
 import { Note } from '../models/Note';
 import { Collection } from '@mikro-orm/core';
-import logger from '../utils/Logging';
+import logger from '../Logger/Logging';
 
 const userRouter = Router();
 
