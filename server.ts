@@ -4,13 +4,12 @@
 
 // Custom imports
 import app from './app'
+import logger from './src/Logger/Logging'
 import { Settings } from './src/config/settings'
 import createMicroOrmDatabase from './src/database/connector'
-import logger from './src/Logger/Logging'
 
 const startServer = async (): Promise<void> => {
       try {
-
             const PORT = Settings.server.PORT
             await createMicroOrmDatabase().then(async (options) => {
                   console.log('🚀 Database ready')
@@ -26,7 +25,6 @@ const startServer = async (): Promise<void> => {
                         logger.info(`🚀 Express ready`)
                         console.log(`🚀 Server ready at http://localhost:${PORT}`)
                   })
-
             })
             logger.info('🚀 Database ready')
       }

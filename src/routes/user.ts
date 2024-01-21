@@ -14,7 +14,7 @@ import logger from '../Logger/Logging';
 const userRouter = Router();
 
 userRouter.post('/login', async (req: Request, res: Response) => {
-
+  
   const em = (await createMicroOrmDatabase().then((options) => options.orm)).em.fork()
 
   // Handle GE request for /api/user
